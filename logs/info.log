@@ -1,0 +1,68 @@
+2022-10-14T02:34:40.162+0700 [main] INFO  com.icheck.backend.BackendApplication - [] - Starting BackendApplication on DESKTOP-8I9PRAS with PID 3588 (E:\Documents\JAVA\SPRING_BOOT\Manage-enterprise-stamp\target\classes started by Ling in E:\Documents\JAVA\SPRING_BOOT\Manage-enterprise-stamp)
+2022-10-14T02:34:40.173+0700 [main] INFO  com.icheck.backend.BackendApplication - [] - No active profile set, falling back to default profiles: default
+2022-10-14T02:34:41.423+0700 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-14T02:34:41.545+0700 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - [] - Finished Spring Data repository scanning in 99ms. Found 4 JPA repository interfaces.
+2022-10-14T02:34:41.902+0700 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-14T02:34:42.171+0700 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - [] - Tomcat initialized with port(s): 8081 (http)
+2022-10-14T02:34:42.183+0700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-10-14T02:34:42.184+0700 [main] INFO  org.apache.catalina.core.StandardService - [] - Starting service [Tomcat]
+2022-10-14T02:34:42.185+0700 [main] INFO  org.apache.catalina.core.StandardEngine - [] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2022-10-14T02:34:42.342+0700 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - [] - Initializing Spring embedded WebApplicationContext
+2022-10-14T02:34:42.343+0700 [main] INFO  org.springframework.web.context.ContextLoader - [] - Root WebApplicationContext: initialization completed in 2023 ms
+2022-10-14T02:34:42.474+0700 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-14T02:34:42.795+0700 [main] INFO  org.hibernate.Version - [] - HHH000412: Hibernate Core {5.4.10.Final}
+2022-10-14T02:34:42.961+0700 [main] INFO  org.hibernate.annotations.common.Version - [] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-14T02:34:43.130+0700 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Starting...
+2022-10-14T02:34:43.352+0700 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Start completed.
+2022-10-14T02:34:43.375+0700 [main] INFO  org.hibernate.dialect.Dialect - [] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-10-14T02:34:46.611+0700 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - [] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-14T02:34:46.617+0700 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-14T02:34:47.200+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/public/**'], []
+2022-10-14T02:34:47.201+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/*/v3/api-docs/**'], []
+2022-10-14T02:34:47.201+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/*/swagger-ui.html'], []
+2022-10-14T02:34:47.201+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/*/swagger-ui/**'], []
+2022-10-14T02:34:47.201+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/**/api-docs/**'], []
+2022-10-14T02:34:47.225+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41948c13, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fe9adfb, org.springframework.web.filter.CorsFilter@3085befb, org.springframework.security.web.authentication.logout.LogoutFilter@79b0956e, com.icheck.backend.filters.JwtRequestFilter@62264d4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c9ee28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bc0603f, org.springframework.security.web.session.SessionManagementFilter@394b9e22, org.springframework.security.web.access.ExceptionTranslationFilter@5eae392d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cbc3bf3]
+2022-10-14T02:34:47.324+0700 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - [] - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-14T02:34:47.534+0700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [] - Starting ProtocolHandler ["http-nio-8081"]
+2022-10-14T02:34:47.577+0700 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - [] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-14T02:34:47.579+0700 [main] INFO  com.icheck.backend.BackendApplication - [] - Started BackendApplication in 7.996 seconds (JVM running for 9.863)
+2022-10-14T02:36:35.112+0700 [http-nio-8081-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-14T02:36:35.112+0700 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - [] - Initializing Servlet 'dispatcherServlet'
+2022-10-14T02:36:35.119+0700 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - [] - Completed initialization in 7 ms
+2022-10-14T02:38:08.567+0700 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - [] - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-14T02:38:08.568+0700 [SpringContextShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - [] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-14T02:38:08.570+0700 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Shutdown initiated...
+2022-10-14T02:38:08.574+0700 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Shutdown completed.
+2022-10-14T02:38:14.762+0700 [main] INFO  com.icheck.backend.BackendApplication - [] - Starting BackendApplication on DESKTOP-8I9PRAS with PID 5484 (E:\Documents\JAVA\SPRING_BOOT\Manage-enterprise-stamp\target\classes started by Ling in E:\Documents\JAVA\SPRING_BOOT\Manage-enterprise-stamp)
+2022-10-14T02:38:14.767+0700 [main] INFO  com.icheck.backend.BackendApplication - [] - No active profile set, falling back to default profiles: default
+2022-10-14T02:38:15.804+0700 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - [] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-14T02:38:15.875+0700 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - [] - Finished Spring Data repository scanning in 59ms. Found 4 JPA repository interfaces.
+2022-10-14T02:38:16.144+0700 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-14T02:38:16.341+0700 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - [] - Tomcat initialized with port(s): 8081 (http)
+2022-10-14T02:38:16.351+0700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-10-14T02:38:16.352+0700 [main] INFO  org.apache.catalina.core.StandardService - [] - Starting service [Tomcat]
+2022-10-14T02:38:16.352+0700 [main] INFO  org.apache.catalina.core.StandardEngine - [] - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2022-10-14T02:38:16.482+0700 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - [] - Initializing Spring embedded WebApplicationContext
+2022-10-14T02:38:16.483+0700 [main] INFO  org.springframework.web.context.ContextLoader - [] - Root WebApplicationContext: initialization completed in 1677 ms
+2022-10-14T02:38:16.542+0700 [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - [] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-14T02:38:16.759+0700 [main] INFO  org.hibernate.Version - [] - HHH000412: Hibernate Core {5.4.10.Final}
+2022-10-14T02:38:16.888+0700 [main] INFO  org.hibernate.annotations.common.Version - [] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-14T02:38:17.006+0700 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Starting...
+2022-10-14T02:38:17.212+0700 [main] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Start completed.
+2022-10-14T02:38:17.234+0700 [main] INFO  org.hibernate.dialect.Dialect - [] - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-10-14T02:38:20.599+0700 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - [] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-14T02:38:20.605+0700 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - [] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-14T02:38:21.111+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/public/**'], []
+2022-10-14T02:38:21.111+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/*/v3/api-docs/**'], []
+2022-10-14T02:38:21.111+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/*/swagger-ui.html'], []
+2022-10-14T02:38:21.111+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/*/swagger-ui/**'], []
+2022-10-14T02:38:21.111+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: Ant [pattern='/**/api-docs/**'], []
+2022-10-14T02:38:21.133+0700 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - [] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@125a8ab6, org.springframework.security.web.context.SecurityContextPersistenceFilter@24ee6faa, org.springframework.web.filter.CorsFilter@792b9dd3, org.springframework.security.web.authentication.logout.LogoutFilter@74e175c7, com.icheck.backend.filters.JwtRequestFilter@cbc3bf3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7de43652, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31f9f9b3, org.springframework.security.web.session.SessionManagementFilter@96c840a, org.springframework.security.web.access.ExceptionTranslationFilter@49322d04, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4abfa2ff]
+2022-10-14T02:38:21.230+0700 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - [] - Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-14T02:38:21.426+0700 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - [] - Starting ProtocolHandler ["http-nio-8081"]
+2022-10-14T02:38:21.464+0700 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - [] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-14T02:38:21.465+0700 [main] INFO  com.icheck.backend.BackendApplication - [] - Started BackendApplication in 7.071 seconds (JVM running for 8.181)
+2022-10-14T02:38:24.428+0700 [http-nio-8081-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - [] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-14T02:38:24.428+0700 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [] - Initializing Servlet 'dispatcherServlet'
+2022-10-14T02:38:24.435+0700 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - [] - Completed initialization in 6 ms
