@@ -17,7 +17,9 @@ public enum ErrorMessage {
     USERPACKAGE_EXISTED(7, "Gói đăng kí đã tồn tại."),
 
     INCORRECT_LOGIN(8, "Incorrect username or password"),
-    TOKEN_EXPIRE(9, "Token hết hạn");
+    TOKEN_EXPIRE(9, "Token hết hạn"),
+    UP_EXISTED(10, "User package không tồn tại!"),
+    STAMP_EXISTED(11, "Tem không tồn tại");
 //    FIELD_REQUIRED("E1", "Field required"),
 //
 //    FIELD_INVALID("E2", "Field invalid"),

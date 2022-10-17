@@ -13,16 +13,16 @@ import java.time.LocalDateTime;
 @Data
 @Table(name = "stamp")
 @Entity
-public class Stamp {
+public class   Stamp {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 100)
-    private String name;
+    @Column
+    private String code;
 
     @Column
-    private Long userId;
+    private Long userPackageId;
 
     @Column(updatable = false)
     @CreationTimestamp
