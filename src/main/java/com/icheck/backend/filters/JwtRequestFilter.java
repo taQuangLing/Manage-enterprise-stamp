@@ -3,6 +3,8 @@ package com.icheck.backend.filters;
 
 import com.icheck.backend.DAO.MyUserDetailService;
 import com.icheck.backend.entity.Admin;
+import com.icheck.backend.exception.ApiException;
+import com.icheck.backend.exception.ErrorMessage;
 import com.icheck.backend.security.AdminAccount;
 import com.icheck.backend.util.JwtUtil;
 import io.jsonwebtoken.Claims;
@@ -16,6 +18,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.function.Function;
+import java.util.logging.Logger;
 
 
 import javax.servlet.FilterChain;
@@ -52,6 +55,7 @@ public class JwtRequestFilter extends BasicAuthenticationFilter {
 
 		if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
 			jwt = authorizationHeader.substring(7);
+			if (jwtUtil.isTokenExpired(jwt))throw new ApiException(ErrorMessage.TOKEN_EXPIRE);
 			username = jwtUtil.extractUsername(jwt);
 		}
 		if (username != null && SecurityContextHolder.getContext().getAuthentication() == null){

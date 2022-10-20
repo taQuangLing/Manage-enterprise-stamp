@@ -35,4 +35,9 @@ public class UserPackage {
     @UpdateTimestamp
     @Column
     private LocalDateTime update_at;
+    public UserPackage(Long userId, Long packageId){
+        this.userId = userId;
+        this.packageId = packageId;
+        this.status = 1;
+    }
 }

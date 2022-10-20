@@ -34,7 +34,7 @@ public class UserPackageService {
 
         List<UserPackage> userPackages = repo.findByUserIdAndPackageId(request.getUserId(), request.getPackId());
 
-        if (userPackages != null){
+        if (userPackages.size() > 0){
             if (userPackages.get(0).getStatus() == 0) userPackages.get(0).setStatus(1); // neu status = 0 -> set = 1
             else {
                 throw new ApiException(ErrorMessage.USERPACKAGE_EXISTED); // Neu status = 1 -> throw exception
@@ -43,14 +43,15 @@ public class UserPackageService {
         }
         else
         {
+            UserPackage userPackage;
             try{
-                UserPackage userPackage = repo.save(userPackages.get(0));
+                userPackage = repo.save(new UserPackage(user.getId(), pack.getId()));
             }
             catch (Exception e){
                 e.getStackTrace();
                 return null;
             }
-            return converter.toResponse(userPackages.get(0), AddUserPackageResponse.class);
+            return converter.toResponse(userPackage, AddUserPackageResponse.class);
         }
     }
 }
